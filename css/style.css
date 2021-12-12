@@ -1,0 +1,71 @@
+body {
+  font-family: Garamond, serif;
+  margin: 0;
+  color: #433A5E
+}
+
+.cyan-text {
+  color: #80aaff
+}
+
+.white-text {
+  color: #fff
+}
+
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.nav li {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.logo-text {
+  font-size: 32px;
+}
+
+.px-wide {
+  letter-spacing: 1px;
+}
+
+.main-section,
+.blue-section {
+  background: #e6eeff;
+}
+
+.main-section,
+.about-section,
+.blue-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.container {
+  width: 1500px;
+  margin: 0 auto;
+}
+
+.jst_img {
+  width: 780px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: 000
+}
+
+.checkmark-list li {
+  list-style-image: url("../img/icon-ok.png");
+}
+
+.second-checkmark li {
+  list-style-image: url("../img/icon-ok2.png");
+}
