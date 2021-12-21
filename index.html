@@ -10,47 +10,43 @@
 </head>
 
 <body>
-  <div class="main-section">
-
-    <div class="container">
-      <ul class="cyan-text nav px-wide">
+  <header>
+    <div class="container" id="top">
+      <ul class="nav px-wide">
         <li>
-
-          <span class="cyan-text logo-text">Павло <br> Коваленко</span>
+          <span class="logo-text">Павло <br> Коваленко</span>
         </li>
-        <li>Досвід роботи</li>
-        <li>Досягнення</li>
-        <li>Сильні сторони</li>
-        <li>Приватне</li>
-        <li>Контакти</li>
-
+        <li><a href="#work">Досвід роботи</a></li>
+        <li><a href="#achievement">Досягнення</a></li>
+        <li><a href="#strengths">Сильні сторони</a></li>
+        <li><a href="#about me">Приватне</a></li>
+        <li><a href="#contact">Контакти</a></li>
       </ul>
 
       <img src="img/img1.jpg" alt="image keyboard">
-      <p>
+      <span>
         Джуніор в сфері IT, вивчився сам методом спроб і помилок. Маю бажання розвиватися і надалі.
-      </p>
+      </span>
 
       <h1>
         Чоловік учениці на марафоні ITEA
       </h1>
     </div>
-    <!-- container -->
-  </div>
+  </header>
   <!-- main-section -->
-
-  <div class="container">
-
-    <h2>
-      Досвід роботи
-    </h2>
-    <ol>
-      <li>2008-2017 навчання в школі</li>
-      <li>2017-2021 робота в сфері IT</li>
-    </ol>
-
-    <hr>
-
+  <div class="about-section" id="work">
+    <div class="container">
+      <h2>
+        Досвід роботи
+      </h2>
+      <ol class="list-user">
+        <li>2008-2017 навчання в школі</li>
+        <li>2017-2021 робота в сфері IT</li>
+      </ol>
+    </div>
+  </div>
+  <!-- about-section -->
+  <div class="container" id="achievement">
     <h2>
       Мої досягнення
     </h2>
@@ -68,34 +64,36 @@
 
     <hr>
 
-    <h2>
-      Мої сильні сторони
-    </h2>
-    <ul class="second-checkmark">
-      <li>Люблю вчитися</li>
-      <li>Розумний</li>
-      <li>Витривалий</li>
-      <li>Комунікабельний</li>
-    </ul>
+    <div class="container" id="strengths">
+      <h2>
+        Мої сильні сторони
+      </h2>
+      <ul class="second-checkmark">
+        <li>Люблю вчитися</li>
+        <li>Розумний</li>
+        <li>Витривалий</li>
+        <li>Комунікабельний</li>
+      </ul>
 
-    <hr>
+      <hr>
+    </div>
   </div>
   <!-- container -->
 
- <div class="blue-section">
-   <div class="container">
-     <h2>
-         Мій принцип роботи
-       </h2>
-       <p>
-       <i>"Ubuntu - древнее африканское слово, означающее "Я не могу настроить Debian и Arch""</i>
-       </p>
+  <div class="blue-section">
+    <div class="container">
+      <h2>
+        Мій принцип роботи
+      </h2>
+      <span>
+        <i>"Ubuntu - древнее африканское слово, означающее "Я не могу настроить Debian и Arch""</i>
+      </span>
     </div>
     <!-- container -->
   </div>
   <!-- blue-section -->
 
-  <div class="container">
+  <div class="container" id="about me">
     <h2>
       Трохи про себе
     </h2>
@@ -109,22 +107,26 @@
       <img src="img/img4.png" alt="image 4">
     </div>
 
-    <hr>
   </div>
   <!-- container -->
 
-  <div class="container">
-    <h2>
-      Контакти
-    </h2>
-    <form action="">
-      <input type="text">
-      <input type="text">
-      <textarea></textarea>
-      <button type="submit">Відправити</button>
-    </form>
+  <div class="contact-section" id="contact">
+    <div class="container">
+      <h2>
+        Контакти
+      </h2>
+      <form action="" method="post" id="main-form">
+        <input type="text" name="full-name" placeholder="ПІБ">
+        <input type="mail" name="mail" placeholder="Email">
+        <textarea name="message" placeholder="Повідомлення"></textarea>
+        <input type="submit" value="Відправити" id="submit">
+      </form>
+    </div>
+    <!-- container -->
   </div>
-  <!-- container -->
+  <div class="to-top">
+    <a href="#top"></a>
+  </div>
 </body>
 
 </html>

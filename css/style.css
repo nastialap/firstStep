@@ -1,15 +1,21 @@
 body {
   font-family: Garamond, serif;
   margin: 0;
-  color: #433A5E
+  border: none;
+  color: #292929;
 }
 
-.cyan-text {
-  color: #80aaff
+header {
+  background-color: #778899;
 }
 
-.white-text {
-  color: #fff
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.logo-text {
+  font-size: 32px;
 }
 
 .nav {
@@ -18,8 +24,13 @@ body {
   padding: 0;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 40px;
   align-items: center;
+  color: #191970;
+}
+
+.nav a {
+color: #191970;
+text-decoration: none;
 }
 
 .nav li {
@@ -28,38 +39,48 @@ body {
   padding-right: 10px;
 }
 
-.logo-text {
-  font-size: 32px;
+.main-img {
+  display: block;
+  max-width: 100%;
 }
+
 
 .px-wide {
   letter-spacing: 1px;
 }
 
-.main-section,
-.blue-section {
-  background: #e6eeff;
-}
-
-.main-section,
-.about-section,
-.blue-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.blue-section
+.container {
+  background-image: url(../img/background.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .container {
-  width: 1500px;
+  width: 1170px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 .jst_img {
-  width: 780px;
-  margin: 0 auto;
+  width: 70%;
+  margin: 50px auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  color: #000;
+  font-size: 40px;
+  margin: 0;
 }
 
 h2 {
-  color: 000
+  color: 000;
+  font-size: 40px;
+  margin-top: 0;
 }
 
 .checkmark-list li {
@@ -68,4 +89,66 @@ h2 {
 
 .second-checkmark li {
   list-style-image: url("../img/icon-ok2.png");
+}
+
+.list-user {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-user li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.list-user span {
+  font-size: 18px;
+}
+
+#main-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#main-form input,
+#main-form textarea {
+  padding: 10px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-family: Garamond, serif;
+  border: none;
+  border: 2px solid #191970;
+  width: 100%;
+}
+
+#main-form textarea {
+  height: 100px;
+}
+
+#main-form #submit {
+  width: 300px;
+  background: #191970;
+  color: #fff;
+  cursor: pointer;
+}
+
+.to-top {
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  bottom: 0;
+  width: 1300px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.to-top a {
+  color: #191970;
+  text-decoration-line: none;
+  border: 2px solid #191970;
+  width: 48px;
+  height: 48px;
+  background: url("../img/arrow_icon.png") no-repeat center;
 }
